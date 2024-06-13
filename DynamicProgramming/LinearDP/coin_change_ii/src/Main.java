@@ -41,6 +41,14 @@ public class Main {
         int T = sc.nextInt();
 
         while (T-- > 0) {
+            int amount = sc.nextInt();
+            int n = sc.nextInt();
+            int[] coins = new int[n];
+            for (int i = 0; i < n; ++i) {
+                coins[i] = sc.nextInt();
+            }
+
+            System.out.println(new Solution().change(amount, coins));
         }
 
         sc.close();
