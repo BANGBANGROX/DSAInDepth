@@ -33,6 +33,14 @@ public class Main {
         int T = sc.nextInt();
 
         while (T-- > 0) {
+            int n = sc.nextInt();
+            int[][] pairs = new int[n][2];
+            for (int i = 0; i < n; ++i) {
+                pairs[i][0] = sc.nextInt();
+                pairs[i][1] = sc.nextInt();
+            }
+
+            System.out.println(new Solution().findLongestChain(pairs));
         }
 
         sc.close();
